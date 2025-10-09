@@ -1,0 +1,148 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: url('images/background.jpg') no-repeat center top fixed;
+  background-size: 100% auto; /* fit width, scale height */
+}
+
+/* Hero section */
+.hero {
+  width: 100%;
+  min-height: 100vh;      /* at least full screen height */
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: flex-start; /* start from top */
+}
+
+/* Main image — NO absolute positioning */
+.center-image {
+  display: block;
+  width: auto;
+  max-width: 80%;      /* or 100% if you want full width */
+  height: auto;        /* natural height preserved */
+  max-height: none;    /* don’t crop */
+  object-fit: contain; /* keep proportions */
+  margin-top: 50px;
+}
+
+/* Logo styling */
+.logo-container {
+  position: relative;       /* container positioning */
+  height: 800px;
+  width: 300px;            /* visible area of logo */
+  overflow: hidden;         /* crop the logo when it scrolls out */
+  inset: 0%;
+  -webkit-clip-path: inset(0px 0px 0px 0px);
+  clip-path: inset(0px 0px 0px 0px);
+
+}
+
+.logo {
+  position: fixed;  
+  display: inline-block;         /* sticks to top-left even when scrolling */
+  top: 10px;                  /* adjust as needed */
+  left: 10px;
+  font-size: 5rem;        /* adjust as needed */
+  font-style: italic;
+  font-family:'Times New Roman', Times, serif; /* narrow/long */
+  transform: scaleY(5);   /* stretch vertically 200% */
+  transform-origin: left top;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333232;
+  z-index: 1001;          /* above nav and page content */
+  inset: 0%;
+}
+
+/* Navigation container */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 40px;   /* space from edges */
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end; /* push menu to right */
+  z-index: 1000;        /* keep on top of other content */
+}
+
+/* Menu list */
+nav .menu {
+  list-style: none;      /* remove bullets */
+  margin: 0;
+  padding:0;
+  display: flex;        /* horizontal items */
+  gap: 20px;             /* space between items */
+}
+
+/* Menu links */
+nav .menu li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0px 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Dropdown menu */
+nav .menu li.dropdown {
+  position: relative;
+}
+
+nav .menu li.dropdown .dropdown-menu {
+  display: none;         /* hide initially */
+  position: absolute;
+  top: 100%;             /* below the parent */
+  left: 50%;                  /* start from the middle of parent */
+  transform: translateX(-50%); /* center align */
+  list-style: none;
+  background-color: transparent;
+  padding: 10px 0;
+  margin: 0;
+  min-width: 150px;
+  text-align: center;   
+}
+
+nav .menu li.dropdown:hover .dropdown-menu {
+  display: block;        /* show on hover */
+}
+
+nav .menu li.dropdown .dropdown-menu li a {
+  display: block;
+  padding: 8px 30px;
+  color: #000000;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes bottom section to bottom */
+  min-height: 100vh;
+}
+
+.home-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.home-links {
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color:#000
+}
+site-footer {
+  color: #000000;
+  display: flex;
+  padding: 1rem 0;
+  margin-top: auto; /* push footer to bottom */
+}
