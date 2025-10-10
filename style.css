@@ -33,13 +33,12 @@ body {
 /* Logo styling */
 .logo-container {
   position: relative;       /* container positioning */
-  height: 800px;
-  width: 300px;            /* visible area of logo */
+  height: 100%;
+  width: 30%;            /* visible area of logo */
   overflow: hidden;         /* crop the logo when it scrolls out */
   inset: 0%;
   -webkit-clip-path: inset(0px 0px 0px 0px);
   clip-path: inset(0px 0px 0px 0px);
-
 }
 
 .logo {
@@ -47,9 +46,10 @@ body {
   display: inline-block;         /* sticks to top-left even when scrolling */
   top: 10px;                  /* adjust as needed */
   left: 10px;
-  font-size: 5rem;        /* adjust as needed */
+  font-size: 32px;        /* adjust as needed */
   font-style: italic;
   font-family:'Times New Roman', Times, serif; /* narrow/long */
+  font-weight: lighter;
   transform: scaleY(5);   /* stretch vertically 200% */
   transform-origin: left top;
   margin: 0;
