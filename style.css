@@ -7,6 +7,7 @@ body {
   overflow-x: hidden;
   background: url('images/background.jpg') no-repeat center top fixed;
   background-size: 100% auto; /* fit width, scale height */
+  background-attachment: fixed;
 }
 
 /* Hero section */
@@ -26,7 +27,7 @@ body {
   height: auto;        /* natural height preserved */
   max-height: none;    /* don’t crop */
   object-fit: contain; /* keep proportions */
-  margin-top: 50px;
+  margin-top: 100%;
 }
 
 /* Logo styling */
@@ -137,10 +138,15 @@ nav .menu li.dropdown .dropdown-menu li a {
   font-family: 'Times New Roman', Times, serif;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   color:#000
 }
-site-footer {
+
+.home-links a {
+  color: #000000;
+  text-decoration: none;
+}
+.site-footer {
   color: #000000;
   display: flex;
   padding: 1rem 0;
