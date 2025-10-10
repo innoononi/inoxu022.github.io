@@ -55,7 +55,6 @@ body {
   padding: 0;
   text-decoration: none;
   color: #333232;
-  z-index: 1001;          /* above nav and page content */
   inset: 0%;
 }
 
