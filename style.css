@@ -20,6 +20,7 @@ body {
 /* Main image — NO absolute positioning */
 .center-image {
   display: block;
+  position: relative
   width: auto;
   max-width: 80%;      /* or 100% if you want full width */
   height: auto;        /* natural height preserved */
