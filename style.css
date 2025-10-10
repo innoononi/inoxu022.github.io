@@ -32,8 +32,8 @@ body {
 /* Logo styling */
 .logo-container {
   position: relative;       /* container positioning */
-  height: min-content;
-  width: min-content;            /* visible area of logo */
+  height: auto;
+  width: auto;            /* visible area of logo */
   overflow: hidden;         /* crop the logo when it scrolls out */
   inset: 0%;
   -webkit-clip-path: inset(0px 0px 0px 0px);
