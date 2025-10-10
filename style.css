@@ -1,6 +1,4 @@
 body {
-  display: block;
-  position: fixed;
   margin: 0;
   padding: 0;
   color: #fff;
@@ -8,7 +6,6 @@ body {
   overflow-x: hidden;
   background: url('images/background.jpg') no-repeat center top fixed;
   background-size: 100% auto;
-  z-index: -10;
 }
 
 /* Hero section */
